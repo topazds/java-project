@@ -26,36 +26,40 @@ public class Exam01 {
 			score = "Thirty-All";
 		} else if (countA == countB && countA >= 3 && countB >= 3) {
 			score = "Deuce";
-		}else if(countA ==2 && countB==1) {
+		} else if (countA == 2 && countB == 1) {
 			score = "Thirty-Fifteen";
-		}else if(countA ==1 && countB==2) {
+		} else if (countA == 1 && countB == 2) {
 			score = "Fifteen-Thirty";
-		}else if(countA ==3 && countB==1) {
+		} else if (countA == 3 && countB == 1) {
 			score = "Forty-Fifteen";
-		}else if(countA ==1 && countB==3) {
+		} else if (countA == 1 && countB == 3) {
 			score = "Fifteen-Forty";
-		}else if(countA ==4 && countB==1) {
+		} else if (countA == 4 && countB == 1) {
 			score = "Win for Player A";
-		}else if(countA ==1 && countB==4) {
+		} else if (countA == 1 && countB == 4) {
 			score = "Win for Player B";
-		}else if(countA ==3 && countB==2) {
+		} else if (countA == 3 && countB == 2) {
 			score = "Forty-Thirty";
-		}else if(countA ==2 && countB==3) {
+		} else if (countA == 2 && countB == 3) {
 			score = "Thirty-Forty";
-		}else if(countA ==4 && countB==2) {
+		} else if (countA == 4 && countB == 2) {
 			score = "Win for Player A";
-		}else if(countA ==2 && countB==4) {
+		} else if (countA == 2 && countB == 4) {
 			score = "Win for Player B";
-		}else if(countA ==4 && countB==3) {
-			score = "Advantage Player A";
-		}else if(countA ==3 && countB==4) {
-			score = "Advantage Player B";
-		}else if(countA ==5 && countB==4) {
-			score = "Advantage Player A";
-		}else if(countA ==4 && countB==5) {
-			score = "Advantage Player B";
-		}
 
+		} else if (countA == 4 && countB == 3) {
+			score = "Advantage Player A";
+		} else if (countA == 3 && countB == 4) {
+			score = "Advantage Player B";
+		} else if (countA == 5 && countB == 4) {
+			score = "Advantage Player A";
+		} else if (countA == 4 && countB == 5) {
+			score = "Advantage Player B";
+		}else if (countA == 6 && countB == 4) {
+			score = "Win for Player A";
+		}else if (countA == 4 && countB == 6) {
+			score = "Win for Player B";
+		}
 
 		else if (countB == 1) {
 			score = "Love-Fifteen";
