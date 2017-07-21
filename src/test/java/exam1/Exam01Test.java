@@ -49,7 +49,7 @@ public class Exam01Test {
         assertEquals("Win for Player A", actualResult);
     }
 
-    @Test @Ignore
+    @Test //6
     public void player_B_win_1_should_Love_Fifteen() {
         exam01.playerBWin();
         String actualResult = exam01.getScore();
