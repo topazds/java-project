@@ -52,6 +52,8 @@ public class Exam01 {
 			score = "Advantage Player B";
 		}else if(countA ==5 && countB==4) {
 			score = "Advantage Player A";
+		}else if(countA ==4 && countB==5) {
+			score = "Advantage Player B";
 		}
 
 
