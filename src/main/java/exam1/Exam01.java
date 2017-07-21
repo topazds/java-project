@@ -19,25 +19,16 @@ public class Exam01 {
 	public String getScore() {
 		String score;
 
-		// switch (countB) {
-		// case 1:
-		// score = "Love-Fifteen";
-		// break;
-		// default:
-		// score = "Love-All";
-		// break;
-		// }
-
 		if (countB == 1) {
 			score = "Love-Fifteen";
-		}else if(countB ==2) {
-			score ="Love-Thirty";
-		}else if(countB==3) {
-			score ="Love-Forty";
-		}else if(countB==4) {
-			score ="Win for Player B";
+		} else if (countB == 2) {
+			score = "Love-Thirty";
+		} else if (countB == 3) {
+			score = "Love-Forty";
+		} else if (countB == 4) {
+			score = "Win for Player B";
 		}
-		
+
 		else if (countA == 1) {
 			score = "Fifteen-Love";
 		} else if (countA == 2) {
@@ -48,6 +39,10 @@ public class Exam01 {
 			score = "Win for Player A";
 		} else {
 			score = "Love-All";
+		}
+		
+		if(countA==1&&countB==1) {
+			score ="Fifteen-All";
 		}
 
 		return score;
