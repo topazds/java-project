@@ -51,13 +51,13 @@ public class Exam01 {
 			score = "Win for "+playerNameB;
 
 		} else if (countA == 4 && countB == 3) {
-			score = "Advantage Player A";
+			score = "Advantage"+playerNameA;
 		} else if (countA == 3 && countB == 4) {
-			score = "Advantage Player B";
+			score = "Advantage"+playerNameB;
 		} else if (countA == 5 && countB == 4) {
-			score = "Advantage Player A";
+			score = "Advantage"+playerNameA;
 		} else if (countA == 4 && countB == 5) {
-			score = "Advantage Player B";
+			score = "Advantage"+playerNameB;
 		} else if (countA == 6 && countB == 4) {
 			score = "Win for "+playerNameA;
 		} else if (countA == 4 && countB == 6) {
