@@ -48,6 +48,8 @@ public class Exam01 {
 			score = "Win for Player B";
 		}else if(countA ==4 && countB==3) {
 			score = "Advantage Player A";
+		}else if(countA ==3 && countB==4) {
+			score = "Advantage Player B";
 		}
 
 
