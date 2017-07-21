@@ -30,7 +30,7 @@ public class Exam01Test {
         assertEquals("Thirty-Love", actualResult);
     }
 
-    @Test
+    @Test //4
     public void player_A_win_3_times_should_Forty_Love() {
         exam01.playerAWin();
         exam01.playerAWin();
@@ -39,7 +39,7 @@ public class Exam01Test {
         assertEquals("Forty-Love", actualResult);
     }
 
-    @Test @Ignore
+    @Test //5
     public void player_A_is_winner_times_should_Win_for_Player_A() {
         exam01.playerAWin();
         exam01.playerAWin();

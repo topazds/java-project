@@ -22,6 +22,8 @@ public class Exam01 {
 			score = "Thirty-Love";
 		} else if (countA == 3) {
 			score = "Forty-Love";
+		}else if(countA == 4) {
+			score = "Win for Player A";
 		}
 
 		else {
