@@ -209,7 +209,7 @@ public class Exam01Test {
         assertEquals("Thirty-Forty", actualResult);
     }
 
-    @Test @Ignore
+    @Test //22
     public void player_A_is_winner_with_4_2_should_Win_for_Player_A() {
         exam01.playerAWin();
         exam01.playerBWin();

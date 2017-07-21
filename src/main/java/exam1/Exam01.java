@@ -42,6 +42,8 @@ public class Exam01 {
 			score = "Forty-Thirty";
 		}else if(countA ==2 && countB==3) {
 			score = "Thirty-Forty";
+		}else if(countA ==4 && countB==2) {
+			score = "Win for Player A";
 		}
 
 
