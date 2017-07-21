@@ -59,6 +59,8 @@ public class Exam01 {
 			score = "Win for Player A";
 		}else if (countA == 4 && countB == 6) {
 			score = "Win for Player B";
+		}else if (countA == 14 && countB == 16) {
+			score = "Win for Player B";
 		}
 
 		else if (countB == 1) {
