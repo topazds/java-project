@@ -4,7 +4,7 @@ public class Exam01 {
 	int countA = 0;
 	int countB = 0;
 	boolean deuce = false;
-	
+
 	public Exam01(String firstPerson, String secondPerson) {
 
 	}
@@ -19,8 +19,18 @@ public class Exam01 {
 
 	public String getScore() {
 		String score;
-		
-		if (countB == 1) {
+
+		if (countA == 1 && countB == 1) {
+			score = "Fifteen-All";
+		} else if (countA == 2 && countB == 2) {
+			score = "Thirty-All";
+		} else if (countA == countB && countA >= 3 && countB >= 3) {
+			score = "Deuce";
+		}else if(countA ==2 && countB==1) {
+			score = "Thirty-Fifteen";
+		}
+
+		else if (countB == 1) {
 			score = "Love-Fifteen";
 		} else if (countB == 2) {
 			score = "Love-Thirty";
@@ -40,14 +50,6 @@ public class Exam01 {
 			score = "Win for Player A";
 		} else {
 			score = "Love-All";
-		}
-
-		if (countA == 1 && countB == 1) {
-			score = "Fifteen-All";
-		} else if (countA == 2 && countB == 2) {
-			score = "Thirty-All";
-		} else if (countA==countB&&countA>=3&&countB>=3) {
-			score = "Deuce";
 		}
 
 		return score;
