@@ -3,8 +3,8 @@ package exam1;
 public class Exam01 {
 
     public Exam01(String firstPerson, String secondPerson) {
+    	
     }
-
 
     public void playerAWin() {
     }
@@ -13,7 +13,8 @@ public class Exam01 {
     }
 
     public String getScore() {
-        return null;
+    		String score="Love-All";
+        return score;
     }
 
 }
