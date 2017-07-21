@@ -15,14 +15,14 @@ public class Exam01Test {
         assertEquals("Love-All", actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void player_A_win_1_should_Fifteen_Love() {
         exam01.playerAWin();
         String actualResult = exam01.getScore();
         assertEquals("Fifteen-Love", actualResult);
     }
 
-    @Test @Ignore
+    @Test
     public void player_A_win_2_times_should_Thirty_Love() {
         exam01.playerAWin();
         exam01.playerAWin();
