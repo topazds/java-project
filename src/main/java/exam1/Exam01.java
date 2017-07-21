@@ -31,7 +31,7 @@ public class Exam01 {
 		if (countB == 1) {
 			score = "Love-Fifteen";
 		}else if(countB ==2) {
-			score ="Love-Thiry";
+			score ="Love-Thirty";
 		}else if(countB==3) {
 			score ="Love-Forty";
 		}else if(countB==4) {
