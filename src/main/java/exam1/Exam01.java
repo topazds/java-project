@@ -43,6 +43,8 @@ public class Exam01 {
 		
 		if(countA==1&&countB==1) {
 			score ="Fifteen-All";
+		}else if(countA==2&&countB==2) {
+			score ="Thirty-All";
 		}
 
 		return score;
