@@ -4,9 +4,12 @@ public class Exam01 {
 	int countA = 0;
 	int countB = 0;
 	boolean deuce = false;
+	String playerNameA;
+	String playerNameB;
 
 	public Exam01(String firstPerson, String secondPerson) {
-
+		playerNameA = firstPerson;
+		playerNameB = secondPerson;
 	}
 
 	public void playerAWin() {
@@ -35,17 +38,17 @@ public class Exam01 {
 		} else if (countA == 1 && countB == 3) {
 			score = "Fifteen-Forty";
 		} else if (countA == 4 && countB == 1) {
-			score = "Win for Player A";
+			score = "Win for "+playerNameA;
 		} else if (countA == 1 && countB == 4) {
-			score = "Win for Player B";
+			score = "Win for "+playerNameB;
 		} else if (countA == 3 && countB == 2) {
 			score = "Forty-Thirty";
 		} else if (countA == 2 && countB == 3) {
 			score = "Thirty-Forty";
 		} else if (countA == 4 && countB == 2) {
-			score = "Win for Player A";
+			score = "Win for "+playerNameA;
 		} else if (countA == 2 && countB == 4) {
-			score = "Win for Player B";
+			score = "Win for "+playerNameB;
 
 		} else if (countA == 4 && countB == 3) {
 			score = "Advantage Player A";
@@ -55,12 +58,12 @@ public class Exam01 {
 			score = "Advantage Player A";
 		} else if (countA == 4 && countB == 5) {
 			score = "Advantage Player B";
-		}else if (countA == 6 && countB == 4) {
-			score = "Win for Player A";
-		}else if (countA == 4 && countB == 6) {
-			score = "Win for Player B";
-		}else if (countA == 14 && countB == 16) {
-			score = "Win for Player B";
+		} else if (countA == 6 && countB == 4) {
+			score = "Win for "+playerNameA;
+		} else if (countA == 4 && countB == 6) {
+			score = "Win for "+playerNameB;
+		} else if (countA == 14 && countB == 16) {
+			score = "Win for "+playerNameB;
 		}
 
 		else if (countB == 1) {
@@ -70,7 +73,7 @@ public class Exam01 {
 		} else if (countB == 3) {
 			score = "Love-Forty";
 		} else if (countB == 4) {
-			score = "Win for Player B";
+			score = "Win for "+playerNameB;
 		}
 
 		else if (countA == 1) {
@@ -80,7 +83,7 @@ public class Exam01 {
 		} else if (countA == 3) {
 			score = "Forty-Love";
 		} else if (countA == 4) {
-			score = "Win for Player A";
+			score = "Win for "+playerNameA;
 		} else {
 			score = "Love-All";
 		}
