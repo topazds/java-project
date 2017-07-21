@@ -45,6 +45,8 @@ public class Exam01 {
 			score ="Fifteen-All";
 		}else if(countA==2&&countB==2) {
 			score ="Thirty-All";
+		}else if(countA==3&&countB==3) {
+			score ="Deuce";
 		}
 
 		return score;
