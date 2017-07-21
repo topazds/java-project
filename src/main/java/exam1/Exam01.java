@@ -32,7 +32,10 @@ public class Exam01 {
 			score = "Fifteen-Thirty";
 		}else if(countA ==3 && countB==1) {
 			score = "Forty-Fifteen";
+		}else if(countA ==1 && countB==3) {
+			score = "Fifteen-Forty";
 		}
+
 
 		else if (countB == 1) {
 			score = "Love-Fifteen";

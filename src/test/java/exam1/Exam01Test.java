@@ -155,7 +155,7 @@ public class Exam01Test {
         assertEquals("Forty-Fifteen", actualResult);
     }
 
-    @Test @Ignore
+    @Test //17
     public void normal_case_04_should_Fifteen_Forty() {
         exam01.playerAWin();
         exam01.playerBWin();
