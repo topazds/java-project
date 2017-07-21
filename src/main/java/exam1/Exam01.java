@@ -28,6 +28,8 @@ public class Exam01 {
 			score = "Deuce";
 		}else if(countA ==2 && countB==1) {
 			score = "Thirty-Fifteen";
+		}else if(countA ==1 && countB==2) {
+			score = "Fifteen-Thirty";
 		}
 
 		else if (countB == 1) {
