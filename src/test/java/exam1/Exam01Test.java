@@ -165,7 +165,7 @@ public class Exam01Test {
         assertEquals("Fifteen-Forty", actualResult);
     }
 
-    @Test @Ignore
+    @Test //18
     public void player_A_is_winner_with_4_1_should_Win_for_Player_A() {
         exam01.playerAWin();
         exam01.playerBWin();
