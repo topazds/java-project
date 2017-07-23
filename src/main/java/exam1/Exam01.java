@@ -6,6 +6,9 @@ public class Exam01 {
 	boolean deuce = false;
 	String playerNameA;
 	String playerNameB;
+	String score;
+	String scoreA;
+	String scoreB;
 
 	public Exam01(String firstPerson, String secondPerson) {
 		playerNameA = firstPerson;
@@ -14,78 +17,60 @@ public class Exam01 {
 
 	public void playerAWin() {
 		countA++;
+		if (countB == 0) {
+			scoreB = "Love";
+		}
+		if (countA == 1) {
+			scoreA = "Fifteen";
+		}
+		if (countA == 2) {
+			scoreA = "Thirty";
+		}
+		if (countA == 3) {
+			scoreA = "Forty";
+		}
 	}
 
 	public void playerBWin() {
 		countB++;
+		if (countA == 0) {
+			scoreA = "Love";
+		}
+		if (countB == 1) {
+			scoreB = "Fifteen";
+		}
+		if (countB == 2) {
+			scoreB = "Thirty";
+		}
+		if (countB == 3) {
+			scoreB = "Forty";
+		}
 	}
 
 	public String getScore() {
-		String score;
 
-		if (countA == 1 && countB == 1) {
+		if (countA > 3 || countB > 3) {
+			if (countB - countA == 1) {
+				score = "Advantage " + playerNameB;
+			} else if (countA - countB == 1) {
+				score = "Advantage " + playerNameA;
+			} else if (countA - countB >= 2) {
+				score = "Win for " + playerNameA;
+			} else if (countB - countA >= 2) {
+				score = "Win for " + playerNameB;
+			} else {
+				score = "Deuce";
+			}
+		} else if (countA == 0 && countB == 0) {
+			score = "Love-All";
+		} else if (countA == 1 && countB == 1) {
 			score = "Fifteen-All";
 		} else if (countA == 2 && countB == 2) {
 			score = "Thirty-All";
-		} else if (countA == countB && countA >= 3 && countB >= 3) {
+		} else if (countA == countB) {
 			score = "Deuce";
-		} else if (countA == 2 && countB == 1) {
-			score = "Thirty-Fifteen";
-		} else if (countA == 1 && countB == 2) {
-			score = "Fifteen-Thirty";
-		} else if (countA == 3 && countB == 1) {
-			score = "Forty-Fifteen";
-		} else if (countA == 1 && countB == 3) {
-			score = "Fifteen-Forty";
-		} else if (countA == 4 && countB == 1) {
-			score = "Win for "+playerNameA;
-		} else if (countA == 1 && countB == 4) {
-			score = "Win for "+playerNameB;
-		} else if (countA == 3 && countB == 2) {
-			score = "Forty-Thirty";
-		} else if (countA == 2 && countB == 3) {
-			score = "Thirty-Forty";
-		} else if (countA == 4 && countB == 2) {
-			score = "Win for "+playerNameA;
-		} else if (countA == 2 && countB == 4) {
-			score = "Win for "+playerNameB;
-
-		} else if (countA == 4 && countB == 3) {
-			score = "Advantage"+playerNameA;
-		} else if (countA == 3 && countB == 4) {
-			score = "Advantage"+playerNameB;
-		} else if (countA == 5 && countB == 4) {
-			score = "Advantage"+playerNameA;
-		} else if (countA == 4 && countB == 5) {
-			score = "Advantage"+playerNameB;
-		} else if (countA == 6 && countB == 4) {
-			score = "Win for "+playerNameA;
-		} else if (countA == 4 && countB == 6) {
-			score = "Win for "+playerNameB;
-		} else if (countA == 14 && countB == 16) {
-			score = "Win for "+playerNameB;
-		}
-
-		else if (countB == 1) {
-			score = "Love-Fifteen";
-		} else if (countB == 2) {
-			score = "Love-Thirty";
-		} else if (countB == 3) {
-			score = "Love-Forty";
-		} else if (countB == 4) {
-			score = "Win for "+playerNameB;
-		}
-
-		else if (countA == 1) {
-			score = "Fifteen-Love";
-		} else if (countA == 2) {
-			score = "Thirty-Love";
-		} else if (countA == 3) {
-			score = "Forty-Love";
-		} else if (countA == 4) {
-			score = "Win for "+playerNameA;
 		} else {
-			score = "Love-All";
+			score = scoreA + "-" + scoreB;
 		}
 
 		return score;
