@@ -38,6 +38,7 @@ public class Exam01 {
 
         scoreA = convertString (countA);
         scoreB = convertString (countB);
+
         if (countA > 3 || countB > 3) {
             if (countB - countA == 1) {
                 score = "Advantage " + playerNameB;
@@ -51,13 +52,13 @@ public class Exam01 {
                 score = "Deuce";
             }
         } else if (countA == 0 && countB == 0) {
-            score = "Love-All";
+            score = String.format ("%s-All", scoreA);
         } else if (countA == 1 && countB == 1) {
-            score = "Fifteen-All";
+            score = String.format ("%s-All", scoreA);
         } else if (countA == 2 && countB == 2) {
-            score = "Thirty-All";
+            score = String.format ("%s-All", scoreA);
         } else if (countA == countB) {
-            score = "Deuce";
+            score = ("Deuce");
         } else {
             score = String.format ("%s-%s", scoreA, scoreB);
         }
