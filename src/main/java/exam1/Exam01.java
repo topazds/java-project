@@ -41,7 +41,7 @@ public class Exam01 {
 
         if (countA > 3 || countB > 3) {
             if (countB - countA == 1) {
-                score = "Advantage " + playerNameB;
+                score = "Advantage " + playerNameB;/**/
             } else if (countA - countB == 1) {
                 score = "Advantage " + playerNameA;
             } else if (countA - countB >= 2) {
@@ -63,5 +63,7 @@ public class Exam01 {
             score = String.format ("%s-%s", scoreA, scoreB);
         }
         return score;
+
     }
 }
+

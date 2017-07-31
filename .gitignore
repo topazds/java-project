@@ -1,3 +1,5 @@
 .idea/
 exammidterm.iml
 target/
+/.classpath
+/.project
